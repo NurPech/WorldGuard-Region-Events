@@ -47,16 +47,21 @@
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.9.2-R0.1-SNAPSHOT</version>
+            <version>1.13.2-R0.1-SNAPSHOT</version>
             <type>jar</type>
         </dependency>
         <!-- WorldGuard Dependency -->
         <dependency>
-            <groupId>com.sk89q</groupId>
-            <artifactId>worldguard</artifactId>
-            <version>6.1</version>
+            <groupId>com.sk89q.worldguard</groupId>
+            <artifactId>worldguard-legacy</artifactId>
+            <version>7.0.0-beta-02</version>
             <type>jar</type>
-            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>bstats-bukkit</artifactId>
+                    <groupId>org.bstats.bStats-Metrics</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 </project>

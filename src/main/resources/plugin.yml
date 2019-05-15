@@ -1,4 +1,5 @@
 name: WGRegionEvents
-version: 1.3
+version: ${project.version}
 main: com.mewin.WGRegionEvents.WGRegionEventsPlugin
 depend: [ WorldGuard ]
+api-version: 1.13
